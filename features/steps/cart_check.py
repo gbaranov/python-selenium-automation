@@ -3,9 +3,9 @@ from behave import given, when, then
 from time import sleep
 
 
-@given('Open Amazon page')
-def open_amazon_page(context):
-    context.driver.get('https://amazon.com')
+#@given('Open Amazon page')
+#def open_amazon_page(context):
+#    context.driver.get('https://amazon.com')
 @when('Click on Cart icon')
 def open_cart(context):
     context.driver.find_element(By.ID, 'nav-cart').click()
