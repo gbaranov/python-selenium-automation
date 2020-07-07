@@ -3,6 +3,11 @@ Feature: Amazon Cart validation
 
   Scenario: Validate and count amount of items in cart
     Given Open Amazon page
-    When Input echo into search field
+    When Input bag into search field
     And Click on item title
-    And 
+    And Click add to cart
+    And Input hat into search field
+    And Click on item title
+    And Click add to cart
+    And Click Cart
+    Then Item is shown
