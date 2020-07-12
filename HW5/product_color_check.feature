@@ -1,6 +1,6 @@
 # Created by admin at 7/11/20
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Product color validation
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: User can select product colors
+    Given Open Amazon product by ASIN B07BJKRR25
+    Then User can select through colors
