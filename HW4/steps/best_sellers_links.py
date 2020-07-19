@@ -13,7 +13,7 @@ GIFT_IDEAS = (By.XPATH, "//*[@id='zg_tabs']/ul/li[5]/div/a")
 @when('Click Best Sellers link')
 def bs_click(context):
     context.driver.find_element(*BEST_SELLERS_LINK).click()
-    sleep(2)
+    sleep(10)
 
 
 @then('Verify links existence')
