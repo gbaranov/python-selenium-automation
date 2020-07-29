@@ -15,9 +15,9 @@ CART_ITEMS_TEXT = []
 #ASIN = (By.CSS_SELECTOR, 'a.a-link-normal.a-text-normal')
 
 
-@given('Open Amazon page')
-def open_amazon_page(context):
-    context.driver.get('https://amazon.com')
+#@given('Open Amazon page')
+#def open_amazon_page(context):
+#    context.driver.get('https://amazon.com')
 
 
 @when('Input {query} into search field')

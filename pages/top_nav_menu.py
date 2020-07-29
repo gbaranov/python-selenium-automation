@@ -2,9 +2,17 @@ from pages.base_page import Page
 from selenium.webdriver.common.by import By
 
 class TopNavMenu(Page):
-    SEARCH_INPUT = (By.NAME, 'q')
-    SEARCH_SUBMIT = (By.NAME, 'btnK')
+    ORDERS = (By.ID, 'nav-orders')
+    CART = (By.ID, 'nav-cart')
+    HAMBURGER = (By.ID, 'nav-hamburger-menu')
+    HAMBURGER_UL = (By.CSS_SELECTOR, 'ul.hmenu.hmenu-visible')
 
-    def search_word(self, search_word):
-        self.input(search_word, *self.SEARCH_INPUT)
-        self.click(*self.SEARCH_SUBMIT)
+    def orders_click(self):
+        self.click(*self.ORDERS)
+
+    def cart_click(self):
+        self.click(*self.CART)
+
+    def hamburger_click(self):
+        self.click(*self.HAMBURGER)
+

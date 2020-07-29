@@ -5,9 +5,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 POPUP = (By.CSS_SELECTOR, '#nav-signin-tooltip span')
 
-@given('Open Amazon page')
-def open_amazon_page(context):
-    context.driver.get('https://amazon.com')
+#given('Open Amazon page')
+#def open_amazon_page(context):
+#    context.driver.get('https://amazon.com')
 
 
 @then('Verify Sign in popup is present and clickable')
